@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a0a00;
+    color: #f0e8d8;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 2rem 2rem 0.8rem;
+    border-bottom: 3px solid #e4000f;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 18px rgba(228, 0, 15, 0.5);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #ff6644;
+    margin: 1.4rem 2rem 0.6rem;
+}
+
+p {
+    margin: 0.8rem 2rem;
+    color: #ddd0b8;
+    font-size: 1rem;
+}
+
+strong {
+    color: #ffcc88;
+}
+
+ul {
+    margin: 0.5rem 2rem 1.5rem;
+    list-style: none;
+    padding: 0.8rem 1rem;
+    background: rgba(228, 0, 15, 0.07);
+    border-radius: 8px;
+    border: 1px solid rgba(228, 0, 15, 0.25);
+}
+
+ul li {
+    padding: 0.45rem 0.5rem 0.45rem 1.5rem;
+    position: relative;
+    color: #f0dfc8;
+    font-size: 0.97rem;
+    border-bottom: 1px solid rgba(228, 0, 15, 0.1);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li::before {
+    content: '★';
+    position: absolute;
+    left: 0.1rem;
+    color: #e4000f;
+    font-size: 0.65rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+center img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8a0008;
+    box-shadow: 0 4px 26px rgba(200, 0, 20, 0.35);
+}
+
+center video {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8a0008;
+}
+
+a {
+    display: inline-block;
+    margin: 1.5rem 2rem 2rem;
+    color: #ff5533;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1.3rem;
+    border: 2px solid #cc2200;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+a:hover {
+    background-color: #cc2200;
+    color: #ffffff;
+}

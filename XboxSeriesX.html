@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xbox Seris X</title>
+    <link rel="stylesheet" href="XboxSeriesX.css">
+</head>
+<body>
+    <nav id="header">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+        <ul class="nav" id="mainNav">
+            <li><a href="Consolas.Html">Inicio</a></li>
+            <li><a href="#">Consolas ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="">VideoJuegos ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        #header {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .menu-toggle {
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 10px;
+        }
+
+        .menu-toggle:hover {
+            background-color: #e94560;
+        }
+
+        .nav {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0 10px;
+            background-color: #1a1a2e;
+            border-radius: 6px;
+            width: 220px;
+        }
+
+        .nav.open {
+            display: block;
+        }
+
+        .nav > li {
+            position: relative;
+        }
+
+        .nav > li > a {
+            display: block;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .nav > li > a:hover {
+            background-color: #e94560;
+        }
+
+        .nav ul {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #16213e;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav ul li a {
+            display: block;
+            padding: 8px 28px;
+            color: #ccc;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .nav ul li a:hover {
+            color: white;
+            background-color: #e94560;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('open');
+        }
+
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove('open');
+            }
+        });
+    </script>
+
+
+                <h1>¿Por quien fue creada la Xbox Series X?</h1>
+
+
+                    <p>La Xbox Series X fue creada y desarrollada por Microsoft, específicamente por su división de videojuegos, 
+                        Xbox Game Studios (anteriormente Microsoft Studios).</p>
+
+                        <strong><p>Al igual que con la PS5, aquí tienes los detalles sobre quiénes están detrás de esta consola:</p></strong>
+
+                                <p><strong>Arquitecto Principal:</strong> Aunque el desarrollo es un esfuerzo de equipo, 
+                                    Carl Ledbetter es reconocido como el arquitecto de hardware y socio director de diseño de dispositivos en Xbox. 
+                                    Él lideró la visión estética y funcional de la consola.</p>
+
+                                        <p><strong>Empresa Desarrolladora:</strong> Microsoft, a través de su división Microsoft Gaming.</p>
+
+                                                <p><strong>Liderazgo Ejecutivo:</strong>  Durante su lanzamiento en 2020 y gran parte de su ciclo de vida, 
+                                                    la marca estuvo bajo el mando de Phil Spencer. 
+                                                    Sin embargo, a fecha de marzo de 2026, Asha Sharma ha sido nombrada como la nueva CEO de Microsoft Gaming.</p><br><br>
+
+                                                        <figcaption>Xbox Series X</figcaption><br>
+                                                            <center><img src="Imagenes/XboxSeriesX.jpg" alt="Xbox Seris X" width="560" height="315"></center><br><br>
+
+                                                                <center><video src="Imagenes/XboxSeX.mp4" alt="Xbox Series X"  width="560" height="315" controls></video></center>
+
+
+                                                                <h2>Juegos M&aacutes Vendidos</h2>
+
+                                                                        <ul>
+                                                                                <li>Minecraft (Xbox Edition): Sigue siendo el rey absoluto con aproximadamente 47.2 millones</li>
+                                                                                <li>Forza Horizon 5: El juego de carreras más exitoso de la marca, superando los 21.6 millones</li>
+                                                                                <li>Starfield: El RPG espacial de Bethesda ha alcanzado los 18.9 millones</li>
+                                                                                <li>Halo Infinite: Especialmente su "Legacy Edition" y expansiones premium, con ventas estimadas en más de 12.4 millones.</li>
+                                                                        </ul>
+
+
+
+</body>
+</html>

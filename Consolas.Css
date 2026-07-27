@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0a0a1a;
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    text-shadow: 0 0 20px rgba(100, 160, 255, 0.5);
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #a0c4ff;
+    margin: 1.5rem 2rem 0.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #7eb8f7;
+    margin: 1rem 2rem 0.5rem;
+}
+
+p {
+    margin: 0.8rem 2rem;
+    color: #c8c8d8;
+    font-size: 1rem;
+}
+
+ul {
+    margin: 0.5rem 3rem 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    color: #d0d8ff;
+}
+
+ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #5588ff;
+}
+
+center img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    border: 2px solid #2a3a6a;
+    box-shadow: 0 4px 24px rgba(60, 100, 200, 0.3);
+}
+
+#header {
+    background-color: #0d0d2b;
+    border-top: 2px solid #1a2a5a;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+}
+
+#header ul.nav {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+#header ul.nav > li {
+    position: relative;
+}
+
+#header ul.nav > li > a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #a0c4ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s, background 0.2s;
+}
+
+#header ul.nav > li > a:hover {
+    color: #ffffff;
+    background-color: #1a2a5a;
+}
+
+#header ul.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111130;
+    border: 1px solid #2a3a6a;
+    border-radius: 6px;
+    min-width: 180px;
+    margin: 0;
+    padding: 0.4rem 0;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+#header ul.nav li:hover > ul {
+    display: block;
+}
+
+#header ul.nav li ul li::before {
+    display: none;
+}
+
+#header ul.nav li ul li a {
+    display: block;
+    padding: 0.55rem 1.2rem;
+    color: #b0c8f0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.15s, color 0.15s;
+}
+
+#header ul.nav li ul li a:hover {
+    background-color: #1e2e5e;
+    color: #ffffff;
+}
+
+/* Override: el menú debe estar oculto hasta que se abra con el botón ☰ */
+#header ul#mainNav {
+    display: none;
+}
+
+#header ul#mainNav.open {
+    display: block;
+}
+

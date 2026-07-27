@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PlayStation 5</title>
+    <link rel="stylesheet" href="PlayStation5.css">
+</head>
+<body>
+    <nav id="header">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+        <ul class="nav" id="mainNav">
+            <li><a href="Consolas.Html">Inicio</a></li>
+            <li><a href="#">Consolas ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="#">VideoJuegos ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        #header {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .menu-toggle {
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 10px;
+        }
+
+        .menu-toggle:hover {
+            background-color: #e94560;
+        }
+
+        .nav {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0 10px;
+            background-color: #1a1a2e;
+            border-radius: 6px;
+            width: 220px;
+        }
+
+        .nav.open {
+            display: block;
+        }
+
+        .nav > li {
+            position: relative;
+        }
+
+        .nav > li > a {
+            display: block;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .nav > li > a:hover {
+            background-color: #e94560;
+        }
+
+        .nav ul {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #16213e;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav ul li a {
+            display: block;
+            padding: 8px 28px;
+            color: #ccc;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .nav ul li a:hover {
+            color: white;
+            background-color: #e94560;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('open');
+        }
+
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove('open');
+            }
+        });
+    </script>
+
+
+            <h1>¿Por quien fue Creada la PlayStation5?</h1>
+
+                    <p>La PlayStation 5 (PS5) fue creada y desarrollada por Sony Interactive Entertainment (SIE), 
+                        una división del conglomerado japonés Sony Group Corporation.</p>
+
+                            <h2>A continuación, se detallan las figuras y entidades clave responsables de su creación:</h2>
+                            
+                                    <strong><p>Arquitecto Principal:</strong> Mark Cerny es el diseñador principal y arquitecto del sistema de la PlayStation 5. 
+                                        Él fue el encargado de liderar el diseño de su hardware y definir innovaciones como la unidad de estado sólido (SSD) de alta velocidad.</p><br>
+
+                                            <p><strong>Empresa Desarrolladora:</strong> Sony Interactive Entertainment (SIE), 
+                                                con sede actual en San Mateo, California, pero bajo la propiedad de Sony en Japón.</p>
+
+                                                    <p><strong>Liderazgo Ejecutivo:</strong> En el momento de su lanzamiento en noviembre de 2020, el presidente y CEO de SIE era Jim Ryan.</p>
+
+                                                    <strong><h3>Contexto Histórico</h3></strong>
+
+                                                            <p>Aunque la PS5 es la consola más reciente, la marca PlayStation fue fundada originalmente gracias a la visión de Ken Kutaragi, 
+                                                                conocido como el "padre de PlayStation", quien supervisó el desarrollo desde la consola original hasta la PS3. 
+                                                                La PS5 representa la quinta generación de esta serie de sistemas de videojuegos de sobremesa.</p><br><br>
+
+                                                                    <figcaption>PlayStation5</figcaption><br>
+                                                                    <center><img src="Imagenes/Play5.jpeg" alt="PlayStation 5" width="560" height="315"></center><br><br>
+
+                                                                        <center><video src="Imagenes/Play5aaaaa.mp4" alt="PlayStation 5" width="560" height="315" controls></video></center><br><br>
+
+                                                                                <h4>Juegos M&aacutes Destacados</h4>
+
+                                                                                    <ul>
+                                                                                            <li>Marvel's Spider-Man 2: Supera los 24.8 millones</li>
+                                                                                            <li>God of War Ragnarök: Ha alcanzado aproximadamente 22.3 millones</li>
+                                                                                            <li>Horizon Forbidden West: Con más de 17.1 millones</li>
+                                                                                            <li>Helldivers 2: Se convirtió en el lanzamiento de venta más rápida, superando los 12 millones</li>
+                                                                                            <li>Final Fantasy XVI: Ha superado los 12.9 millones</li>
+                                                                                
+                                                                                    </ul>
+                                                                                
+
+
+
+</body>
+</html>

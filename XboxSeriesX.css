@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #080f08;
+    color: #d8e8d4;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 2rem 2rem 0.8rem;
+    text-shadow: 0 0 20px rgba(100, 220, 80, 0.5);
+    border-left: 5px solid #107c10;
+    margin: 0 1rem 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #70cc50;
+    margin: 1.4rem 2rem 0.6rem;
+}
+
+p {
+    margin: 0.7rem 2rem;
+    color: #c0d8b8;
+}
+
+strong {
+    color: #98e078;
+}
+
+ul {
+    margin: 0.5rem 2rem 1.5rem;
+    list-style: none;
+    padding: 0.8rem 1rem;
+    background: rgba(16, 124, 16, 0.08);
+    border-radius: 8px;
+    border: 1px solid rgba(16, 124, 16, 0.3);
+}
+
+ul li {
+    padding: 0.45rem 0.5rem 0.45rem 1.4rem;
+    position: relative;
+    color: #c8e0c0;
+    font-size: 0.97rem;
+    border-bottom: 1px solid rgba(16, 124, 16, 0.15);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li::before {
+    content: '●';
+    position: absolute;
+    left: 0.2rem;
+    color: #107c10;
+    font-size: 0.55rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+figcaption {
+    text-align: center;
+    color: #60a848;
+    font-style: italic;
+    margin: 1rem 0 0.3rem;
+}
+
+center img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #0a4f0a;
+    box-shadow: 0 4px 24px rgba(16, 124, 16, 0.35);
+}
+
+center video {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0.5rem auto 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #0a4f0a;
+}
+
+a {
+    display: inline-block;
+    margin: 1.5rem 2rem 2rem;
+    color: #107c10;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1.3rem;
+    border: 2px solid #107c10;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+a:hover {
+    background-color: #107c10;
+    color: #ffffff;
+}

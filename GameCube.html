@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GameCube</title>
+    <link rel="stylesheet" href="Gamecube.css">
+</head>
+<body>
+    <nav id="header">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+        <ul class="nav" id="mainNav">
+            <li><a href="Consolas.Html">Inicio</a></li>
+            <li><a href="#">Consolas ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="#">VideoJuegos ▾</a>
+                <ul>
+                    <li><a href="Nintendo64.html">Nintendo 64</a></li>
+                    <li><a href="GameCube.html">GameCube</a></li>
+                    <li><a href="PlayStation1.html">PlayStation 1</a></li>
+                    <li><a href="Xbox360.html">Xbox 360</a></li>
+                    <li><a href="PlayStation5.html">PlayStation 5</a></li>
+                    <li><a href="XboxSeriesX.html">Xbox Series X</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        #header {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .menu-toggle {
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            margin: 10px;
+        }
+
+        .menu-toggle:hover {
+            background-color: #e94560;
+        }
+
+        .nav {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0 10px;
+            background-color: #1a1a2e;
+            border-radius: 6px;
+            width: 220px;
+        }
+
+        .nav.open {
+            display: block;
+        }
+
+        .nav > li {
+            position: relative;
+        }
+
+        .nav > li > a {
+            display: block;
+            padding: 10px 16px;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .nav > li > a:hover {
+            background-color: #e94560;
+        }
+
+        .nav ul {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #16213e;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+
+        .nav ul li a {
+            display: block;
+            padding: 8px 28px;
+            color: #ccc;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .nav ul li a:hover {
+            color: white;
+            background-color: #e94560;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('open');
+        }
+
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mainNav');
+            const btn = document.querySelector('.menu-toggle');
+            if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                nav.classList.remove('open');
+            }
+        });
+    </script>
+
+            <center><h1>¿Por quien fue creada la GameCube?</h1></center>
+
+                <p>La GameCube fue creada por Nintendo. Se lanzó por primera vez en Japón el 14 de septiembre de 2001, 
+                    en Norteamérica el 18 de noviembre de 2001, y en Europa el 3 de mayo de 2002.
+                        
+                </p>
+
+                <p>GameCube fue la primera consola de Nintendo en usar discos ópticos para su almacenamiento,
+                    los discos son similares al formato miniDVD, y como resultado de su pequeño tamaño, 
+                    el sistema no estaba diseñado para reproducir DVD's Estándar o Discos de Audio.</p>
+
+                    <p>La recepción de GameCube fue generalmente positiva. Algunas personas alabaron la enorme cantidad de juegos y sus juegos con gran calidad, 
+                        mientras otros criticaron el diseño exterior de la consola y su falta de características. 
+                        Alcanzó a vender 21,74 millones de unidades en todo el mundo después de ser discontinuada en 2007.</p>
+
+                        <h2>Videojuegos mas vendidos</h2>
+
+                            <ul>
+                                    <li>Super Smash Bros. Melee (2001) - 7.41 millones</li>
+                                            <li>Mario Kart: Double Dash!! (2003) - 6.88 millones</li>
+                                                <li>Super Mario Sunshine (2002) - 5.91 millones</li>
+                                                    <li>The Legend of Zelda: The Wind Waker (2002) - 4.43 millones</li>
+                                                        <li>Luigi's Mansion (2001) - 3.33 millones</li>
+                                                            <li>Mario Party 4 (2002) - 2.29 millones</li><br><br>
+                                        <strong><figcaption>Gamecube</figcaption></strong>
+                                    <center><img src="Imagenes/Gamecube.jpg"  alt="GameCube" width="560" height="315"></center><br><br>
+
+                                    <strong><figcaption>Una Demostracion de como era:</figcaption></strong>
+                                    
+                                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/0E1wbMFxjbk?si=oMPH661WjKODF3zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+</body>
+</html>
